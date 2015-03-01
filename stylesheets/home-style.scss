@@ -1,0 +1,36 @@
+@import '_h5bp';
+@import '_responsive';
+$blue: rgb(92,
+62,
+107);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    top: 20%;
+}
+
+section {
+    position: relative;
+    top: 40%;
+    //width: 100%;
+}
+
+paper-button {
+    width: 40%;
+    margin: 2%;
+}
+
+h3 {
+    color: $blue;
+    font-size: 25px;
+}

@@ -1,0 +1,59 @@
+<!--
+    @Author -> Ayinla Abdulsalam
+    @Email -> ayinlaabdulsalam@gmail.com
+    @Git -> Wait first
+-->
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="../bower_components/paper-button/paper-button.html" />
+<polymer-element name="home-element">
+    <template>
+        <link rel="stylesheet" href="../stylesheets/home-style.css" />
+        <div>
+            <header>
+                <h3> Choose your level</h3>
+            </header>
+            <section>
+                <paper-button raised on-tap='{{easy}}'> Easy </paper-button>
+                <paper-button raised on-tap='{{hard}}'> Hard </paper-button>
+                <paper-button raised on-tap='{{master}}'> Master </paper-button>
+                <paper-button raised on-tap='{{expert}}'> Expert </paper-button>
+            </section>
+        </div>
+    </template>
+    <script>
+        Polymer('home-element', {
+            mode: "",
+            easy: function () {
+                this.mode = "easy";
+                this.next();
+            },
+            hard: function () {
+                this.mode = "hard";
+                this.next();
+            },
+            master: function () {
+                this.mode = "master";
+                this.next();
+            },
+            expert: function () {
+                this.mode = "expert";
+                this.next();
+            },
+            next: function () {
+                sessionStorage.setItem("mode", this.mode);
+                this.url = "game-element.html";
+                window.location = this.url;
+            },
+        });
+    </script>
+</polymer-element>
+<html>
+
+<head>
+</head>
+
+<body>
+    <home-element></home-element>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="../bower_components/paper-button/paper-button.html" />
+<polymer-element name="quit-element" attributes="score">
+    <template>
+        <link rel="stylesheet" href="../stylesheets/quit-style.css" />
+        <section>
+            <header>
+                <h1> GAME OVER !!!</h1>
+                <h1><span> score :</span> {{score}}</h1>
+            </header>
+            <div>
+                <paper-button raised on-tap='{{playagain}}'> Play Again </paper-button>
+                <paper-button raised on-tap='{{quit}}'> Quit </paper-button>
+            </div>
+        </section>
+    </template>
+    <script>
+        var gui = require('nw.gui');
+        Polymer('quit-element', {
+            created: function () {
+                this.score = sessionStorage.getItem("score");
+            },
+            playagain: function () {
+                window.location = "home-element.html";
+            },
+            quit: function () {
+                window.location = gui.App.quit();;
+            }
+        });
+    </script>
+</polymer-element>
+<html>
+
+<head>
+
+    <body>
+        <quit-element></quit-element>
+    </body>
+</head>
+
+</html>

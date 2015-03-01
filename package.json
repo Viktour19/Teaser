@@ -1,0 +1,21 @@
+{
+    "version": "0.0.1",
+    "name": "teaser",
+    "main": "elements/home-element.html",
+    "window": {
+        "toolbar": false,
+        "height": 400,
+        "width": 300,
+        "title": "Teaser",
+        "max_width": 400,
+        "min_width": 300,
+        "min_height": 400,
+        "max_height": 400
+    },
+    "win": {
+        "window": {
+            "frame": false,
+            "toolbar": false
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import '_h5bp';
+@import '_responsive';
+$blue: rgb(92,
+62,
+107);
+*{
+    text-align: center;
+    margin: 0;
+}
+main {
+    height: 100%;
+}
+.main{
+    position: relative;
+    top: 5%;
+}
+paper-input-decorator {
+    width: 100%;
+}
+
+.see {
+    font-size: 15px;
+    position: relative;
+    top: 2%;
+    width: 50%;
+    float: left;
+    span {
+        display: block;
+        font-size: 50px;
+        color: $blue;
+    }
+}

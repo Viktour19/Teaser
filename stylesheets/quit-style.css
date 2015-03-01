@@ -1,0 +1,185 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 17, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+html, button, input, select, textarea {
+  color: #222; }
+
+/* line 21, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+/* line 26, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+a {
+  color: #00e; }
+
+/* line 30, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+a:visited {
+  color: #551a8b; }
+
+/* line 34, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+a:hover {
+  color: #06e; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 42, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 50, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 60, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* Prevent callout */
+/* line 91, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.nocallout {
+  -webkit-touch-callout: none; }
+
+/* line 95, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.pressed {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+/* line 101, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+textarea[contenteditable] {
+  -webkit-appearance: none; }
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+/* line 108, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.gifhidden {
+  position: absolute;
+  left: -100%; }
+
+/*
+ * Image replacement
+ */
+/* line 117, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.ir {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em; }
+
+/* line 128, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.ir br {
+  display: none; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 136, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 145, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 162, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 175, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.invisible {
+  visibility: hidden; }
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+/* line 185, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table; }
+
+/* line 190, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_h5bp */
+.clearfix::after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* line 2, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/_responsive */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9; }
+
+/* line 3, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/quit-style.scss */
+section {
+  text-align: center; }
+
+/* line 7, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/quit-style.scss */
+header {
+  padding-top: 8%; }
+
+/* line 11, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/quit-style.scss */
+paper-button {
+  display: block;
+  padding: 4%;
+  margin: 5%; }
+
+/* line 17, /home/SexyBeast/Documents/SANDBOX/webkit/brainteaser/stylesheets/quit-style.scss */
+* {
+  font: 10px; }
+
+/*# sourceMappingURL=quit-style.css.map */

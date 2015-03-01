@@ -1,0 +1,46 @@
+<!--
+    @Author -> Ayinla Abdulsalam
+    @Email -> ayinlaabdulsalam@gmail.com
+    @Git -> Wait first
+-->
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="../bower_components/paper-button/paper-button.html" />
+<link rel="import" href="../bower_components/paper-input/paper-input-decorator.html" />
+<polymer-element name="game-element">
+    <template>
+
+        <link rel="stylesheet" href="../stylesheets/game-style.css" />
+        <main>
+            <section class="see"> Score <span>{{score}}</span>
+            </section>
+            <section class="see"> Time <span>{{timeLeft}}</span>
+            </section>
+
+            <section class="main">
+                <paper-input-decorator floatinglabel label={{c_alphabet}}>
+                    <input id="input1" value={{city}} is="core-input">
+                </paper-input-decorator>
+                <paper-input-decorator floatinglabel label={{n_alphabet}}>
+                    <input id="input2" value={{country}} is="core-input">
+                </paper-input-decorator>
+
+                <paper-input-decorator floatinglabel label={{a_alphabet}}>
+                    <input id="input3" value={{animal}} is="core-input">
+                </paper-input-decorator>
+
+                <paper-button class="save" on-tap="{{state}}" raised> {{statetxt}} </paper-button>
+            </section>
+        </main>
+    </template>
+    <script src="../javascripts/game-script.js"></script>
+</polymer-element>
+<html>
+
+<head>
+</head>
+
+<body>
+    <game-element></game-element>
+</body>
+
+</html>

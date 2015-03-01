@@ -1,0 +1,19 @@
+@import '_h5bp';
+@import '_responsive';
+section {
+    text-align: center;
+}
+
+header {
+    padding-top: 8%;
+}
+
+paper-button {
+    display: block;
+    padding: 4%;
+    margin: 5%;
+}
+
+* {
+    font: 10px;
+}

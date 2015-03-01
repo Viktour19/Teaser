@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "file": "responsive.css",
+  "sources": [
+    "responsive.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAAA,MAAM;EAEF,QAAQ;EACR,SAAS;EACT,QAAQ;EACR,kBAAkB",
+  "names": [],
+  "sourceRoot": ""
+}
